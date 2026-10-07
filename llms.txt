@@ -1,0 +1,28 @@
+# Darsh Patel — pateldarsh.in
+> Full Stack Web Developer (Laravel, PHP, MySQL) and aspiring AI engineer based in Mumbai, India. Builds web apps, SaaS platforms, and LLM-powered AI features.
+
+## Pages
+- [Home / Portfolio](https://pateldarsh.in/): Bio, experience, selected work, skills, services, FAQ, contact.
+- [Resume PDF](https://pateldarsh.in/assets/Darsh_Patel_Resume.pdf): Full resume.
+
+## Sections
+- #about: Biography — Laravel/PHP/MySQL developer shipping AI into real products at Traction Shastra.
+- #experience: Traction Shastra Web Developer (Sept 2024–Present), intern (May–Aug 2024), Bharat Intern (Oct–Nov 2023).
+- #work: CtrlBiz (AI SaaS), Vivha Setu (AI wedding platform), BloodConnect (donor matching), plus Cyber Inceptor, Paper Pilots, Friday.
+- #skills: Laravel, PHP, MySQL, REST APIs, JS, LLM integration, prompt engineering, AI automation, computer vision; learning RAG/datasets.
+- #services: AI-integrated web products, full-stack development, REST APIs, SaaS + Razorpay.
+- #faq: Who is Darsh, stack, AI work, hiring availability, education.
+- #contact: todarshpatel002@gmail.com, +91 75179 86796, Mumbai.
+
+## Key facts (citable)
+- Name: Darsh Patel; Location: Mumbai, Maharashtra, India; Email: todarshpatel002@gmail.com; Phone: +91 75179 86796.
+- Role: Full Stack Web Developer at Traction Shastra; aspiring (not yet senior) AI engineer — honest early-stage learner of RAG, model training, datasets.
+- Education: B.Sc. IT 9.15 CGPA and M.Sc. IT 9.00 CGPA, University of Mumbai; DeepLearning.AI Prompt Engineering certification; Confab 25 research paper.
+- CtrlBiz: AI-assisted business SaaS built at Traction Shastra (team project) — AI invoice generator with GST, AI assistant, bookings/inventory, Razorpay, Hindi+English.
+- Vivha Setu: AI wedding platform with LLM expense categorization; presented at Aavishkar Zonal Round.
+- Profiles: GitHub https://github.com/Darsh002, LinkedIn https://linkedin.com/in/darshpatel002.
+
+## Contact / authority
+- Email: todarshpatel002@gmail.com
+- GitHub: https://github.com/Darsh002
+- LinkedIn: https://linkedin.com/in/darshpatel002

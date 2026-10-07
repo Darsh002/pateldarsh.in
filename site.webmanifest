@@ -1,0 +1,24 @@
+{
+  "name": "Darsh Patel — Full Stack Web Developer",
+  "short_name": "Darsh Patel",
+  "description": "Portfolio of Darsh Patel, Full Stack Web Developer (Laravel, PHP, MySQL, LLM integration) based in Mumbai, India.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ebe9e4",
+  "theme_color": "#111111",
+  "lang": "en-IN",
+  "icons": [
+    {
+      "src": "favicon/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "favicon/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

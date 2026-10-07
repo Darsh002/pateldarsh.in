@@ -7,9 +7,22 @@
   <meta name="description" content="Darsh Patel — Full Stack Web Developer specializing in Laravel, PHP, MySQL, and LLM integration, building toward a career in AI engineering. Based in Mumbai, India.">
   <meta name="keywords" content="Darsh Patel, Full Stack Web Developer, Laravel Developer, LLM Integration, Aspiring AI Engineer, Prompt Engineering, Mumbai Web Developer, CtrlBiz, Vivha Setu">
   <meta name="author" content="Darsh Patel">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="googlebot" content="index, follow, max-image-preview:large">
+  <meta name="bingbot" content="index, follow">
+  <meta name="theme-color" content="#111111">
+  <meta name="color-scheme" content="light dark">
+  <meta name="geo.region" content="IN-MH">
+  <meta name="geo.placename" content="Mumbai, Maharashtra, India">
 
   <!-- Canonical Links -->
   <link rel="canonical" href="https://pateldarsh.in/">
+
+  <!-- PWA / Icons -->
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
@@ -17,27 +30,51 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Darsh Patel Portfolio">
+  <meta property="og:locale" content="en_IN">
   <meta property="og:url" content="https://pateldarsh.in/">
   <meta property="og:title" content="Darsh Patel | Full Stack Web Developer, Aspiring AI Engineer">
   <meta property="og:description" content="Building full-stack web products and weaving AI into them — LLM integration, automation, and a growing path toward AI engineering.">
   <meta property="og:image" content="https://pateldarsh.in/assets/images/og-preview.png">
+  <meta property="og:image:alt" content="Darsh Patel — Full Stack Web Developer portfolio preview">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@Darsh002">
   <meta name="twitter:url" content="https://pateldarsh.in/">
   <meta name="twitter:title" content="Darsh Patel | Full Stack Web Developer, Aspiring AI Engineer">
   <meta name="twitter:description" content="Building full-stack web products and weaving AI into them — LLM integration, automation, and a growing path toward AI engineering.">
   <meta name="twitter:image" content="https://pateldarsh.in/assets/images/og-preview.png">
+  <meta name="twitter:image:alt" content="Darsh Patel — Full Stack Web Developer portfolio preview">
+
+  <!-- Performance: preconnect to CDN origins -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="https://unpkg.com">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/animations.css">
 
-  <!-- External Animation & Icon Libraries (CDN) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- External Animation & Icon Libraries (CDN, deferred to avoid render-blocking) -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script defer src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- FAQ (AEO/GEO) minimal styles — ponytail: inherits theme vars, full design lives in style.css -->
+  <style>
+    .faq-headline{font-size:clamp(1.6rem,3.5vw,2.4rem);margin:0 0 8px;letter-spacing:-.02em}
+    .faq-lead{max-width:68ch;opacity:.85;margin:0 0 20px}
+    .faq-list{display:grid;gap:12px;max-width:800px}
+    .faq-item{border:1px solid var(--border,rgba(0,0,0,.12));border-radius:12px;padding:14px 18px;background:var(--card,rgba(255,255,255,.4))}
+    .faq-item summary{cursor:pointer;font-weight:600}
+    .faq-item p{margin:10px 0 2px;line-height:1.6}
+  </style>
 
   <!-- JSON-LD Structured Data Schema -->
   <script type="application/ld+json">
@@ -48,10 +85,13 @@
         "@type": "Person",
         "@id": "https://pateldarsh.in/#person",
         "name": "Darsh Patel",
+        "givenName": "Darsh",
+        "familyName": "Patel",
         "jobTitle": "Full Stack Web Developer, Aspiring AI Engineer",
         "description": "Full Stack Web Developer specializing in PHP, Laravel, and MySQL, with hands-on experience integrating LLM APIs, AI automation, and computer vision into production applications.",
         "url": "https://pateldarsh.in/",
-        "email": "todarshpatel002@gmail.com",
+        "image": "https://pateldarsh.in/assets/images/og-preview.png",
+        "email": "mailto:todarshpatel002@gmail.com",
         "telephone": "+91 7517986796",
         "address": {
           "@type": "PostalAddress",
@@ -59,13 +99,22 @@
           "addressRegion": "Maharashtra",
           "addressCountry": "IN"
         },
-        "almaMater": {
-          "@type": "EducationalOrganization",
+        "nationality": "IN",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
           "name": "University of Mumbai"
         },
         "worksFor": {
           "@type": "Organization",
-          "name": "Traction Shastra"
+          "name": "Traction Shastra",
+          "@id": "https://pateldarsh.in/#org-traction-shastra"
+        },
+        "knowsAbout": ["Laravel", "PHP", "MySQL", "RESTful APIs", "JavaScript", "LLM API Integration", "Prompt Engineering", "AI Automation Workflows", "Computer Vision", "RAG", "SaaS Architecture", "Razorpay Integration"],
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": "Full Stack Web Developer",
+          "occupationLocation": { "@type": "City", "name": "Mumbai, India" },
+          "skills": "Laravel, PHP, MySQL, LLM Integration, REST APIs"
         },
         "sameAs": [
           "https://github.com/Darsh002",
@@ -77,8 +126,93 @@
         "@id": "https://pateldarsh.in/#website",
         "url": "https://pateldarsh.in/",
         "name": "Darsh Patel Portfolio",
-        "publisher": { "@id": "https://pateldarsh.in/#person" },
-        "inLanguage": "en"
+        "inLanguage": "en-IN",
+        "publisher": { "@id": "https://pateldarsh.in/#person" }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://pateldarsh.in/#profile",
+        "url": "https://pateldarsh.in/",
+        "name": "Darsh Patel | Full Stack Web Developer, Aspiring AI Engineer",
+        "about": { "@id": "https://pateldarsh.in/#person" },
+        "mainEntity": { "@id": "https://pateldarsh.in/#person" },
+        "inLanguage": "en-IN",
+        "datePublished": "2024-01-01",
+        "dateModified": "2026-10-07"
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://pateldarsh.in/#projects",
+        "name": "Selected Work by Darsh Patel",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "CtrlBiz — AI Business Management Platform (SaaS)",
+              "applicationCategory": "BusinessApplication",
+              "operatingSystem": "Web",
+              "description": "AI-assisted SaaS for Indian SMBs: billing, bookings, inventory, AI invoice generator with GST, AI business assistant, Razorpay payments. Built at Traction Shastra.",
+              "author": { "@id": "https://pateldarsh.in/#person" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "Vivha Setu — AI-Powered Wedding Management Platform",
+              "applicationCategory": "LifestyleApplication",
+              "operatingSystem": "Web",
+              "description": "Wedding management platform with LLM-automated expense categorization and event scheduling. Presented at Aavishkar Zonal Round.",
+              "author": { "@id": "https://pateldarsh.in/#person" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "BloodConnect — Blood Donor-Recipient Matching Platform",
+              "applicationCategory": "HealthApplication",
+              "operatingSystem": "Web",
+              "description": "Final-year project: real-time donor-recipient matching with automated notifications for urgent blood requests.",
+              "author": { "@id": "https://pateldarsh.in/#person" }
+            }
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://pateldarsh.in/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Who is Darsh Patel?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Darsh Patel is a Full Stack Web Developer based in Mumbai, India, specializing in Laravel, PHP, MySQL and LLM integration, currently working at Traction Shastra and building toward AI engineering." }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Darsh Patel's tech stack?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Core stack is Laravel, PHP, MySQL, JavaScript (ES6+), and RESTful APIs, with Tailwind CSS, React basics, Razorpay payments, and LLM APIs for AI features." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Darsh Patel build AI features?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. He ships LLM API integration, prompt engineering, and AI automation workflows into production apps, including an AI invoice generator and AI business assistant for the CtrlBiz SaaS." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Darsh Patel open to work?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. He is open to AI engineering roles, full-stack roles, and freelance projects involving Laravel builds or LLM integration. Contact at todarshpatel002@gmail.com." }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Darsh Patel's education?",
+            "acceptedAnswer": { "@type": "Answer", "text": "B.Sc. IT (9.15 CGPA) and M.Sc. IT (9.00 CGPA), both from the University of Mumbai, plus a DeepLearning.AI Prompt Engineering certification." }
+          }
+        ]
       }
     ]
   }
@@ -174,6 +308,19 @@
   </div>
 
   <main>
+    <noscript>
+      <div style="padding:24px;max-width:800px;margin:0 auto;font-family:sans-serif;">
+        <h1>Darsh Patel — Full Stack Web Developer, Aspiring AI Engineer (Mumbai, India)</h1>
+        <p>Full Stack Web Developer at Traction Shastra (Sept 2024–Present) specializing in Laravel, PHP, MySQL, REST APIs and LLM integration. B.Sc. IT 9.15 / M.Sc. IT 9.00, University of Mumbai.</p>
+        <h2>Selected Work</h2>
+        <ul>
+          <li><strong>CtrlBiz</strong> — AI Business Management SaaS: AI invoice generator (GST), AI assistant, bookings, inventory, Razorpay.</li>
+          <li><strong>Vivha Setu</strong> — AI wedding management platform with LLM expense automation. Aavishkar Zonal.</li>
+          <li><strong>BloodConnect</strong> — Blood donor-recipient matching platform, final-year project.</li>
+        </ul>
+        <p>Contact: todarshpatel002@gmail.com | +91 75179 86796 | GitHub: github.com/Darsh002 | LinkedIn: linkedin.com/in/darshpatel002</p>
+      </div>
+    </noscript>
     <!-- HERO SECTION — Clean Premium Typography Hero + Interactive Terminal -->
     <section id="hero" class="hero-section">
       <div class="container">
@@ -412,6 +559,42 @@
 
         <div id="services-list" class="services-list">
           <!-- Dynamically populated from content.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ — SEO/AEO only, hidden from frontend UI per owner request. JSON-LD FAQPage mirrors this content. -->
+    <section id="faq" class="section faq-section" hidden aria-hidden="true" style="display:none !important;">
+      <div class="container">
+        <div class="section-label">
+          <div><span class="section-label-number">07 /</span> FAQ</div>
+          <div class="section-label-tag">QUICK ANSWERS</div>
+        </div>
+
+        <h2 class="faq-headline">Frequently asked questions about Darsh Patel</h2>
+        <p class="faq-lead">Darsh Patel is a Full Stack Web Developer based in Mumbai, India, specializing in Laravel, PHP, MySQL and LLM integration, currently at Traction Shastra and building toward AI engineering.</p>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>Who is Darsh Patel?</summary>
+            <p>Darsh Patel is a Full Stack Web Developer in Mumbai, India, working at Traction Shastra since September 2024. He builds Laravel/PHP/MySQL web apps and SaaS products, and integrates AI (LLM APIs, automation) into production software.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What is Darsh Patel's tech stack?</summary>
+            <p>Core stack: Laravel, PHP, MySQL, JavaScript (ES6+), RESTful APIs, Tailwind CSS, Razorpay payments, plus LLM API integration and prompt engineering. Currently learning RAG, model training basics, and dataset work.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What AI work has Darsh Patel shipped?</summary>
+            <p>AI invoice generator with GST support, AI business assistant that answers questions and automates tasks (CtrlBiz SaaS), LLM-automated expense categorization (Vivha Setu), and AI automation workflows for data processing at Traction Shastra.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Is Darsh Patel available for hire or freelance?</summary>
+            <p>Yes — open to AI engineering roles, full-stack roles, and freelance projects (Laravel builds, LLM integration). Email todarshpatel002@gmail.com or call +91 75179 86796.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What is Darsh Patel's education?</summary>
+            <p>B.Sc. IT (9.15 CGPA) and M.Sc. IT (9.00 CGPA) from the University of Mumbai, plus DeepLearning.AI Prompt Engineering for Developers certification and a Confab 25 research paper.</p>
+          </details>
         </div>
       </div>
     </section>
