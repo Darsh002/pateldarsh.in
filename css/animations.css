@@ -1,0 +1,84 @@
+/* ==========================================================================
+   DARSH PATEL PORTFOLIO — ANIMATION & INTERACTION SYSTEM
+   GSAP, ScrollTrigger & CSS Micro-Interactions
+   ========================================================================== */
+
+/* Split-text / Reveal utilities */
+.reveal-text {
+  overflow: hidden;
+}
+
+.reveal-text .char, .reveal-text .word {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+/* Default: visible. JS (GSAP or the IntersectionObserver fallback) opts elements
+   into the hidden-then-reveal effect via .js-animated, so a JS failure never
+   leaves content invisible. */
+.reveal-up {
+  opacity: 1;
+  transform: none;
+}
+
+.reveal-up.js-animated {
+  opacity: 0;
+  transform: translateY(30px);
+  will-change: transform, opacity;
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-up.js-animated.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  will-change: auto;
+}
+
+/* Card hover tilt / lift */
+.card-hover-effect {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-6px);
+}
+
+/* Pulse animation for active badges */
+@keyframes glow-pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--accent-orange-glow);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 76, 36, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 76, 36, 0);
+  }
+}
+
+.glow-active {
+  animation: glow-pulse 2.5s infinite;
+}
+
+/* Reduced Motion Override for Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .marquee-track {
+    animation: none;
+  }
+
+  .reveal-up {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .cursor-dot, .cursor-ring {
+    display: none !important;
+  }
+}

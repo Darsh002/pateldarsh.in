@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darsh Patel | Full Stack Web Developer, Aspiring AI Engineer</title>
+  <meta name="description" content="Darsh Patel — Full Stack Web Developer specializing in Laravel, PHP, MySQL, and LLM integration, building toward a career in AI engineering. Based in Mumbai, India.">
+  <meta name="keywords" content="Darsh Patel, Full Stack Web Developer, Laravel Developer, LLM Integration, Aspiring AI Engineer, Prompt Engineering, Mumbai Web Developer, CtrlBiz, Vivha Setu">
+  <meta name="author" content="Darsh Patel">
+
+  <!-- Canonical Links -->
+  <link rel="canonical" href="https://pateldarsh.in/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+  <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pateldarsh.in/">
+  <meta property="og:title" content="Darsh Patel | Full Stack Web Developer, Aspiring AI Engineer">
+  <meta property="og:description" content="Building full-stack web products and weaving AI into them — LLM integration, automation, and a growing path toward AI engineering.">
+  <meta property="og:image" content="https://pateldarsh.in/assets/images/og-preview.png">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://pateldarsh.in/">
+  <meta name="twitter:title" content="Darsh Patel | Full Stack Web Developer, Aspiring AI Engineer">
+  <meta name="twitter:description" content="Building full-stack web products and weaving AI into them — LLM integration, automation, and a growing path toward AI engineering.">
+  <meta name="twitter:image" content="https://pateldarsh.in/assets/images/og-preview.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <!-- External Animation & Icon Libraries (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- JSON-LD Structured Data Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://pateldarsh.in/#person",
+        "name": "Darsh Patel",
+        "jobTitle": "Full Stack Web Developer, Aspiring AI Engineer",
+        "description": "Full Stack Web Developer specializing in PHP, Laravel, and MySQL, with hands-on experience integrating LLM APIs, AI automation, and computer vision into production applications.",
+        "url": "https://pateldarsh.in/",
+        "email": "todarshpatel002@gmail.com",
+        "telephone": "+91 7517986796",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Mumbai",
+          "addressRegion": "Maharashtra",
+          "addressCountry": "IN"
+        },
+        "almaMater": {
+          "@type": "EducationalOrganization",
+          "name": "University of Mumbai"
+        },
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Traction Shastra"
+        },
+        "sameAs": [
+          "https://github.com/Darsh002",
+          "https://linkedin.com/in/darshpatel002"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://pateldarsh.in/#website",
+        "url": "https://pateldarsh.in/",
+        "name": "Darsh Patel Portfolio",
+        "publisher": { "@id": "https://pateldarsh.in/#person" },
+        "inLanguage": "en"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Noise Overlay -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- Interactive Ambient Canvas -->
+  <canvas id="ambient-canvas" class="ambient-canvas" aria-hidden="true"></canvas>
+
+  <!-- Custom Physics Cursor -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- HEADER & NAVIGATION -->
+  <header class="site-header">
+    <nav class="header-center" aria-label="Main Navigation">
+      <div class="nav-pill">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#skills" class="nav-link">Expertise</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="assets/Darsh_Patel_Resume.pdf" download class="header-cta-btn">Resume <i data-lucide="download" style="width: 13px; height: 13px;"></i></a>
+      </div>
+    </nav>
+
+    <div class="header-right">
+      <button class="menu-toggle" aria-label="Open Menu">
+        <i data-lucide="menu" style="width: 22px; height: 22px;"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE BOTTOM DOCK NAVIGATION -->
+  <nav class="mobile-dock" aria-label="Mobile Quick Navigation">
+    <a href="#hero" class="dock-item" data-dock-link aria-label="Home">
+      <i data-lucide="home"></i>
+      <span>Home</span>
+    </a>
+    <a href="#work" class="dock-item" data-dock-link aria-label="Work">
+      <i data-lucide="briefcase"></i>
+      <span>Work</span>
+    </a>
+    <a href="#skills" class="dock-item" data-dock-link aria-label="Expertise">
+      <i data-lucide="cpu"></i>
+      <span>Skills</span>
+    </a>
+    <a href="#contact" class="dock-item" data-dock-link aria-label="Contact">
+      <i data-lucide="send"></i>
+      <span>Contact</span>
+    </a>
+    <button class="dock-item dock-menu-btn" aria-label="Open Menu">
+      <i data-lucide="menu"></i>
+      <span>Menu</span>
+    </button>
+  </nav>
+
+  <!-- FULLSCREEN MOBILE MENU OVERLAY -->
+  <div class="mobile-menu-overlay" aria-hidden="true">
+    <div class="mobile-menu-header">
+      <div class="logo">
+        <span class="logo-badge">DP</span>
+        <div class="logo-text-group">
+          <span class="logo-name" style="color: var(--text-inverse);">DARSH PATEL</span>
+          <span class="logo-role" style="color: var(--text-inverse-muted);">FULL-STACK ENGINEER</span>
+        </div>
+      </div>
+      <button class="mobile-menu-close" aria-label="Close Menu">
+        <i data-lucide="x" style="width: 24px; height: 24px;"></i>
+      </button>
+    </div>
+
+    <nav class="mobile-nav-links">
+      <a href="#about" class="mobile-nav-link"><span class="num">01</span> About</a>
+      <a href="#experience" class="mobile-nav-link"><span class="num">02</span> Experience</a>
+      <a href="#work" class="mobile-nav-link"><span class="num">03</span> Selected Work</a>
+      <a href="#skills" class="mobile-nav-link"><span class="num">04</span> Expertise</a>
+      <a href="#achievements" class="mobile-nav-link"><span class="num">05</span> Achievements</a>
+      <a href="#services" class="mobile-nav-link"><span class="num">06</span> Services</a>
+      <a href="#contact" class="mobile-nav-link"><span class="num">07</span> Contact</a>
+      <a href="assets/Darsh_Patel_Resume.pdf" download class="mobile-nav-link"><span class="num">08</span> Download Resume</a>
+    </nav>
+
+    <div class="mobile-menu-footer">
+      <div>MUMBAI, MAHARASHTRA, INDIA</div>
+      <div>todarshpatel002@gmail.com</div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION — Clean Premium Typography Hero + Interactive Terminal -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="hero-layout-grid">
+          <div class="hero-content">
+            <div class="hero-eyebrow reveal-up">
+              <span class="status-dot"></span>
+              <span>OPEN TO AI & SOFTWARE ENGINEERING ROLES</span>
+            </div>
+
+            <h1 class="hero-title-main reveal-up">
+              <span class="text-line">DARSH PATEL</span>
+            </h1>
+
+            <p class="hero-role-line reveal-up">Full Stack Web Developer, Aspiring AI Engineer</p>
+
+            <p class="hero-lead-text reveal-up">
+              I build full-stack web products and love weaving <strong>AI</strong> into them — from LLM integrations to automation — while steadily sharpening my craft toward <strong>AI engineering</strong>.
+            </p>
+
+            <div class="hero-cta-group reveal-up">
+              <a href="#work" class="btn btn-primary">
+                View Work <i data-lucide="arrow-down-right" style="width: 18px; height: 18px;"></i>
+              </a>
+              <a href="assets/Darsh_Patel_Resume.pdf" download class="btn btn-secondary">
+                Download Resume <i data-lucide="download" style="width: 18px; height: 18px;"></i>
+              </a>
+            </div>
+
+            <div class="hero-quick-stats reveal-up">
+              <div class="quick-stat-item">
+                <span class="quick-stat-val">9.15</span>
+                <span class="quick-stat-lbl">B.Sc IT CGPA</span>
+              </div>
+              <div class="quick-stat-item">
+                <span class="quick-stat-val">9.00</span>
+                <span class="quick-stat-lbl">M.Sc IT CGPA</span>
+              </div>
+              <div class="quick-stat-item">
+                <span class="quick-stat-val">1.5+ yrs</span>
+                <span class="quick-stat-lbl">Production Experience</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive AI Terminal -->
+          <div class="hero-terminal reveal-up" id="hero-terminal">
+            <div class="terminal-header-bar">
+              <div class="terminal-dots">
+                <span class="dot-btn red"></span>
+                <span class="dot-btn yellow"></span>
+                <span class="dot-btn green"></span>
+              </div>
+              <span class="terminal-title">darsh@portfolio — ask me anything</span>
+            </div>
+
+            <div class="terminal-body" id="terminal-body" data-lenis-prevent>
+              <div class="terminal-line terminal-system">Live AI assistant <span class="terminal-ai-badge">⚡ powered by Gemini</span> — ask anything about Darsh.</div>
+              <div class="terminal-line terminal-system">Type <span class="terminal-cmd-hint">help</span> for quick commands, or just ask a question.</div>
+            </div>
+
+            <form class="terminal-input-row" id="terminal-form" autocomplete="off">
+              <span class="terminal-prompt">&gt;</span>
+              <input type="text" id="terminal-input" class="terminal-input" placeholder="type a command..." maxlength="300" aria-label="Terminal command input">
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ticker Ribbon Marquee -->
+      <div class="hero-marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <div class="marquee-item"><span class="dot"></span> LARAVEL &amp; PHP ARCHITECTURE</div>
+          <div class="marquee-item"><span class="dot"></span> LLM API INTEGRATION</div>
+          <div class="marquee-item"><span class="dot"></span> AI AUTOMATION WORKFLOWS</div>
+          <div class="marquee-item"><span class="dot"></span> PROMPT ENGINEERING</div>
+          <div class="marquee-item"><span class="dot"></span> MYSQL &amp; REST API DESIGN</div>
+          <div class="marquee-item"><span class="dot"></span> LEARNING ML FUNDAMENTALS</div>
+          <!-- Repeat items for seamless infinite scroll -->
+          <div class="marquee-item"><span class="dot"></span> LARAVEL &amp; PHP ARCHITECTURE</div>
+          <div class="marquee-item"><span class="dot"></span> LLM API INTEGRATION</div>
+          <div class="marquee-item"><span class="dot"></span> AI AUTOMATION WORKFLOWS</div>
+          <div class="marquee-item"><span class="dot"></span> PROMPT ENGINEERING</div>
+          <div class="marquee-item"><span class="dot"></span> MYSQL &amp; REST API DESIGN</div>
+          <div class="marquee-item"><span class="dot"></span> LEARNING ML FUNDAMENTALS</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-label">
+          <div><span class="section-label-number">01 /</span> ABOUT</div>
+          <div class="section-label-tag">BIOGRAPHY & CORE PHILOSOPHY</div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-left-sticky">
+            <h2 class="about-headline">FULL-STACK ENGINEERING, NOW WITH AI AT THE CORE.</h2>
+            <div class="about-status-card reveal-up">
+              <div class="status-card-top">
+                <span class="status-card-live-dot"></span>
+                <span class="status-card-live-text">Currently building</span>
+              </div>
+
+              <div class="status-card-focus">Shipping AI features at Traction Shastra, learning ML fundamentals on the side.</div>
+
+              <div class="status-card-facts">
+                <div class="status-fact">
+                  <i data-lucide="map-pin" style="width: 15px; height: 15px;"></i>
+                  <span>Mumbai, India</span>
+                </div>
+                <div class="status-fact">
+                  <i data-lucide="briefcase" style="width: 15px; height: 15px;"></i>
+                  <span>Traction Shastra</span>
+                </div>
+                <div class="status-fact">
+                  <i data-lucide="graduation-cap" style="width: 15px; height: 15px;"></i>
+                  <span>M.Sc. IT, 9.00 CGPA</span>
+                </div>
+              </div>
+
+              <div class="status-card-footer">
+                <span class="status-card-name">DARSH PATEL</span>
+                <span class="status-card-role">Full Stack Dev → AI Eng</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-body">
+            <p class="reveal-up">
+              I'm a <strong>Full Stack Web Developer</strong> specializing in PHP, Laravel, and MySQL — and I spend a growing share of my time shipping AI into real products instead of treating it as a bolt-on feature.
+            </p>
+            <p class="reveal-up">
+              At <strong>Traction Shastra</strong>, I build websites, CMS platforms, and SaaS applications — including AI-powered products like an AI-assisted accounting SaaS. I'm steadily building toward AI engineering — right now that means learning the fundamentals: <strong>RAG</strong>, model training basics, data annotation, and working with datasets.
+            </p>
+            <p class="reveal-up">
+              I've completed both my B.Sc. (<strong>9.15 CGPA</strong>) and M.Sc. (<strong>9.00 CGPA</strong>) in Information Technology from the University of Mumbai.
+            </p>
+
+            <div class="about-highlights-grid">
+              <div class="highlight-stat-card reveal-up">
+                <div class="stat-number">9.15<span class="accent">/10</span></div>
+                <div class="stat-label">B.Sc. IT CGPA</div>
+              </div>
+              <div class="highlight-stat-card reveal-up">
+                <div class="stat-number">9.00<span class="accent">/10</span></div>
+                <div class="stat-label">M.Sc. IT CGPA</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE TIMELINE SECTION -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-label">
+          <div><span class="section-label-number">02 /</span> EXPERIENCE</div>
+          <div class="section-label-tag">CAREER TIMELINE</div>
+        </div>
+
+        <div id="experience-timeline" class="timeline-list">
+          <!-- Dynamically populated from content.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK SECTION -->
+    <section id="work" class="section">
+      <div class="container">
+        <div class="section-label">
+          <div><span class="section-label-number">03 /</span> SELECTED WORK</div>
+          <div class="section-label-tag">CASE STUDIES & FEATURED PROJECTS</div>
+        </div>
+
+        <div id="work-grid" class="work-grid">
+          <!-- Dynamically populated from content.js -->
+        </div>
+
+        <div class="other-projects-block">
+          <h3 class="other-projects-heading">Other Projects</h3>
+          <div id="other-projects-list" class="other-projects-list">
+            <!-- Dynamically populated from content.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL EXPERTISE SECTION -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-label">
+          <div><span class="section-label-number">04 /</span> EXPERTISE</div>
+          <div class="section-label-tag">TECHNOLOGY STACK & TOOLS</div>
+        </div>
+
+        <!-- Interactive Stack Filter Bar -->
+        <div class="skills-filter-bar reveal-up">
+          <button class="skills-filter-btn active" data-filter="all">ALL STACK</button>
+          <button class="skills-filter-btn" data-filter="AI & LLM Engineering">AI & LLM</button>
+          <button class="skills-filter-btn" data-filter="Backend & Databases">BACKEND</button>
+          <button class="skills-filter-btn" data-filter="Frontend">FRONTEND</button>
+          <button class="skills-filter-btn" data-filter="Languages & Tools">TOOLS</button>
+        </div>
+
+        <div id="skills-grid" class="skills-grid">
+          <!-- Dynamically populated from content.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS & RESEARCH SECTION -->
+    <section id="achievements" class="section">
+      <div class="container">
+        <div class="section-label">
+          <div><span class="section-label-number">05 /</span> ACHIEVEMENTS</div>
+          <div class="section-label-tag">RESEARCH & RECOGNITION</div>
+        </div>
+
+        <div id="achievements-grid" class="achievements-grid">
+          <!-- Dynamically populated from content.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-label">
+          <div><span class="section-label-number">06 /</span> SERVICES</div>
+          <div class="section-label-tag">WHAT I CAN BUILD FOR YOU</div>
+        </div>
+
+        <div id="services-list" class="services-list">
+          <!-- Dynamically populated from content.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-label">
+          <div><span class="section-label-number">07 /</span> CONTACT</div>
+          <div class="section-label-tag">START A CONVERSATION</div>
+        </div>
+
+        <h2 class="contact-headline">
+          HAVE SOMETHING<br>
+          <span class="highlight-orange">WORTH BUILDING?</span><br>
+          LET'S TALK.
+        </h2>
+
+        <div class="contact-grid">
+          <div class="contact-info-block">
+            <p class="contact-info-lead">
+              Whether you're hiring for an AI engineering role, need LLM integration shipped into a product, or want a full-stack Laravel build — I'm ready.
+            </p>
+
+            <div>
+              <div class="contact-label">DIRECT EMAIL</div>
+              <a href="mailto:todarshpatel002@gmail.com" class="contact-direct-link copy-email-btn">
+                todarshpatel002@gmail.com <i data-lucide="copy" style="width: 20px; height: 20px;"></i>
+              </a>
+            </div>
+
+            <div>
+              <div class="contact-label">PHONE / WHATSAPP</div>
+              <a href="tel:+917517986796" class="contact-direct-link">
+                +91 75179 86796 <i data-lucide="phone" style="width: 20px; height: 20px;"></i>
+              </a>
+            </div>
+
+            <div>
+              <div class="contact-label">CONNECT ON SOCIAL</div>
+              <div class="contact-social-row">
+                <a href="https://github.com/Darsh002" target="_blank" rel="noopener noreferrer" class="social-btn">GitHub</a>
+                <a href="https://linkedin.com/in/darshpatel002" target="_blank" rel="noopener noreferrer" class="social-btn">LinkedIn</a>
+                <a href="mailto:todarshpatel002@gmail.com" class="social-btn">Email</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <form id="contact-form" class="contact-form" action="https://formsubmit.co/todarshpatel002@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="New Project Inquiry — pateldarsh.in">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+              <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+              <div class="form-group">
+                <label for="form-name" class="form-label">YOUR NAME *</label>
+                <input type="text" id="form-name" name="name" class="form-input" placeholder="e.g. Alex Vance" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">YOUR EMAIL ADDRESS *</label>
+                <input type="email" id="form-email" name="email" class="form-input" placeholder="e.g. alex@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">PROJECT DETAILS & MESSAGE *</label>
+                <textarea id="form-message" name="message" class="form-textarea" placeholder="Tell me about your project, timeline, or engineering opportunity..." required></textarea>
+              </div>
+
+              <div id="form-toast" class="form-toast" role="status" aria-live="polite"></div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Send Message <i data-lucide="send" style="width: 18px; height: 18px;"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <strong>DARSH PATEL</strong> — Full Stack Web Developer & Software Engineer
+      </div>
+      <div>
+        © 2026 Darsh Patel. Designed & Engineered with Precision.
+      </div>
+      <div>
+        <button class="back-to-top-btn">Back to top ↑</button>
+      </div>
+    </div>
+  <!-- FLOATING SCROLL-TO-TOP BUTTON -->
+  <button id="scroll-top-fab" class="scroll-top-fab" aria-label="Scroll to top">
+    <i data-lucide="arrow-up" style="width: 20px; height: 20px;"></i>
+  </button>
+
+  <!-- PROJECT CASE STUDY MODAL DRAWER -->
+  <div id="project-modal" class="project-modal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <span id="modal-category" class="modal-category-badge">CASE STUDY</span>
+          <h3 id="modal-title" class="modal-title">Project Title</h3>
+        </div>
+        <button id="modal-close-btn" class="modal-close-btn" aria-label="Close Case Study">
+          <i data-lucide="x" style="width: 22px; height: 22px;"></i>
+        </button>
+      </div>
+
+      <div class="modal-body" data-lenis-prevent>
+        <div id="modal-subtitle" class="modal-subtitle"></div>
+        <p id="modal-description" class="modal-description"></p>
+
+        <div class="modal-section-box">
+          <h4 class="modal-section-title">THE PROBLEM & CHALLENGE</h4>
+          <p id="modal-problem" class="modal-text"></p>
+        </div>
+
+        <div class="modal-section-box">
+          <h4 class="modal-section-title">THE ARCHITECTURAL SOLUTION</h4>
+          <p id="modal-solution" class="modal-text"></p>
+        </div>
+
+        <div class="modal-section-box">
+          <h4 class="modal-section-title">KEY ENGINEERING HIGHLIGHTS</h4>
+          <ul id="modal-features-list" class="modal-bullets"></ul>
+        </div>
+
+        <div class="modal-section-box">
+          <h4 class="modal-section-title">TECHNOLOGIES & FRAMEWORKS</h4>
+          <div id="modal-tech-stack" class="tech-tag-row"></div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <span id="modal-achievement" class="modal-achievement-badge"></span>
+        <div id="modal-actions" class="modal-actions"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project JavaScript Files -->
+  <script src="data/content.js"></script>
+  <script src="js/data-loader.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/interactions.js"></script>
+  <script src="js/terminal.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

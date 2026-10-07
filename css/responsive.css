@@ -1,0 +1,224 @@
+/* ==========================================================================
+   DARSH PATEL PORTFOLIO — RESPONSIVE ADAPTATION SYSTEM (V2 FIX)
+   Target Viewports: 320px, 375px, 430px, 768px, 1024px, 1440px, 1920px, 2560px
+   ========================================================================== */
+
+/* Extra Large Screens (1600px+) */
+@media (min-width: 1600px) {
+  :root {
+    --container-max: 1600px;
+  }
+}
+
+/* Laptops & Standard Desktops (below 1366px) */
+@media (max-width: 1366px) {
+  .hero-title-main {
+    font-size: clamp(3.2rem, 8.5vw, 6.5rem);
+  }
+
+  .nav-link {
+    padding: 0.4rem 0.65rem;
+    font-size: 0.72rem;
+  }
+}
+
+/* Desktop to Tablet Transition (below 1100px) */
+@media (max-width: 1100px) {
+  .header-center {
+    display: none; /* Hide center pill on tablet/mobile to prevent overcrowding */
+  }
+
+  .header-right {
+    display: none; /* Bottom dock takes over navigation + menu trigger on mobile */
+  }
+
+  .site-footer {
+    padding-bottom: 6rem; /* Clear space for the fixed bottom dock */
+  }
+
+  .other-projects-list {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .hero-terminal {
+    height: 420px;
+  }
+}
+
+/* Tablet Screens (max-width: 992px) */
+@media (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-left-sticky {
+    position: relative;
+    top: 0;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .service-item {
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+  }
+
+  .service-desc {
+    grid-column: 2 / -1;
+    margin-top: 0.5rem;
+  }
+}
+
+/* Mobile Screens (max-width: 768px) */
+@media (max-width: 768px) {
+  :root {
+    --container-padding: 1.25rem;
+    --section-spacing: 4.5rem;
+  }
+
+  .site-header {
+    padding: 1rem var(--container-padding);
+  }
+
+  .header-cta-btn {
+    display: none;
+  }
+
+  .hero-section {
+    padding-top: 2.0rem;
+    padding-bottom: 2.5rem;
+    min-height: auto;
+  }
+
+  .hero-title-main {
+    font-size: clamp(2.8rem, 14vw, 4.8rem);
+    line-height: 0.95;
+  }
+
+  .hero-role-line {
+    font-size: 1.1rem;
+  }
+
+  .hero-lead-text {
+    font-size: 1.05rem;
+  }
+
+  .hero-cta-group {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-quick-stats {
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+
+  .about-highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-case-card {
+    padding: 1.5rem;
+  }
+
+  .project-title {
+    font-size: 1.6rem;
+  }
+
+  .project-card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-card-actions {
+    width: 100%;
+  }
+
+  .project-card-actions .btn {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .service-item {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    padding: 1.5rem 0.75rem;
+  }
+
+  .service-item:hover {
+    transform: translateX(4px);
+  }
+
+  .contact-headline {
+    font-size: clamp(2.4rem, 11vw, 4.5rem);
+  }
+
+  .contact-direct-link {
+    font-size: 1.2rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Small Mobile Screens (max-width: 430px) */
+@media (max-width: 430px) {
+  .hero-title-main {
+    font-size: 2.5rem;
+  }
+
+  .stat-number {
+    font-size: 2.2rem;
+  }
+
+  .company-name {
+    font-size: 1.35rem;
+  }
+
+  .modal-card {
+    max-height: 92vh;
+    border-radius: var(--radius-md);
+  }
+
+  .modal-header, .modal-body, .modal-footer {
+    padding: 1.25rem;
+  }
+
+  .skills-filter-btn {
+    padding: 0.4rem 0.85rem;
+    font-size: 0.7rem;
+  }
+}
