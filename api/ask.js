@@ -17,7 +17,8 @@ Facts about Darsh:
 - Core stack: Laravel, PHP, MySQL, JavaScript (ES6+), RESTful APIs.
 - Ships AI into products: LLM API integration, prompt engineering, AI automation workflows.
 - Just started learning AI/ML fundamentals — RAG, model training basics, data annotation, working with datasets — early stage, honest about it, not claiming expertise.
-- At Traction Shastra (agency), builds websites, CMS platforms, and SaaS applications — including CtrlBiz, an AI-powered business management SaaS (AI invoice generator, AI assistant, bookings, Razorpay payments) built as part of the engineering team there, not a solo personal project.
+- At Traction Shastra (agency), builds websites, CMS platforms, and SaaS applications, including AI-powered products.
+- CtrlBiz is his own self-built practice project (not agency work) — an AI-powered business management SaaS with AI invoice generator, AI assistant, bookings and Razorpay payments, designed and developed end-to-end by him to practice full-stack product engineering.
 - Personal projects: Vivha Setu (AI wedding management platform, LLM-automated expense categorization), BloodConnect (blood donor-recipient matching platform, final year project), Cyber Inceptor (browser hand-tracking game, computer vision, live at cyber-inceptor.netlify.app), Paper Pilots (browser game, live at paper-pilots.netlify.app), Friday (Python voice assistant).
 - Education: B.Sc IT 9.15 CGPA and M.Sc IT 9.00 CGPA, both completed, University of Mumbai.
 - Open to AI Engineering roles — he's an aspiring AI engineer, not a claimed expert; be honest about this, don't overstate his AI experience.

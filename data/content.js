@@ -104,38 +104,9 @@ const siteData = {
 
   projects: [
     {
-      id: "ctrlbiz",
-      number: "01",
-      accentColor: "#ff4c24",
-      title: "CtrlBiz",
-      subtitle: "AI Business Management Platform (SaaS) — built at Traction Shastra",
-      category: "Full-Stack SaaS & AI",
-      period: "2025",
-      featured: true,
-      description: "A SaaS platform built at Traction Shastra for Indian small businesses — salons, restaurants, retail, clinics, freelancers — replacing paper registers and disconnected tools with one AI-assisted system.",
-      fullDetails: {
-        problem: "Small businesses in India run on paper registers and disconnected apps — no unified billing, inventory, bookings, or compliance-ready invoicing.",
-        solution: "Built AI features and backend modules for a full-stack SaaS covering billing, bookings, inventory, and staff management — with an AI layer that automates the busywork instead of just digitizing it.",
-        keyFeatures: [
-          "AI invoice generator with GST support",
-          "AI assistant that answers business questions, fills forms, and automates routine tasks",
-          "Booking, inventory, customer and staff management",
-          "QR menu ordering and an analytics dashboard",
-          "Razorpay payments with Hindi and English support"
-        ],
-        achievement: "Built as part of the engineering team at Traction Shastra."
-      },
-      technologies: ["Laravel", "React", "MySQL", "Tailwind CSS", "Razorpay", "LLM APIs"],
-      liveUrl: "",
-      githubUrl: "",
-      linkedinUrl: "https://lnkd.in/p/eMwQsadG",
-      image: "",
-      tag: "AGENCY PROJECT"
-    },
-    {
       id: "vivha-setu",
-      number: "02",
-      accentColor: "#60a5fa",
+      number: "01",
+      accentColor: "#5b4aa7",
       title: "Vivha Setu",
       subtitle: "AI-Powered Wedding Management Platform",
       category: "Full-Stack & AI",
@@ -156,50 +127,77 @@ const siteData = {
       liveUrl: "",
       githubUrl: "",
       linkedinUrl: "https://lnkd.in/p/eYxNuayQ",
-      image: "",
+      images: [
+        "assets/images/vivahasetu/dashboard.jpg",
+        "assets/images/vivahasetu/create-weeding.jpg",
+        "assets/images/vivahasetu/budget-page.jpg",
+        "assets/images/vivahasetu/events.jpg",
+        "assets/images/vivahasetu/decor-suggesstion.jpg",
+        "assets/images/vivahasetu/nearby-location.jpg",
+        "assets/images/vivahasetu/rsvp.jpg"
+      ],
       tag: "AI AUTOMATION"
     },
     {
-      id: "bloodconnect",
-      number: "03",
-      accentColor: "#e11d48",
-      title: "BloodConnect",
-      subtitle: "Blood Donor-Recipient Matching Platform — Final Year Project",
-      category: "Full-Stack & HealthTech",
-      period: "2024",
+      id: "ctrlbiz",
+      number: "02",
+      accentColor: "#4a3a8c",
+      title: "CtrlBiz",
+      subtitle: "AI Business Management Platform (SaaS) — self-built practice project",
+      category: "Full-Stack SaaS & AI",
+      period: "2025",
       featured: true,
-      description: "A web platform bridging the gap between blood donors and recipients, with real-time matching and automated notifications to help address critical blood shortages.",
+      description: "A SaaS platform I built on my own to practice end-to-end product engineering — aimed at Indian small businesses like salons, restaurants, retail and clinics, replacing paper registers and disconnected tools with one AI-assisted system.",
       fullDetails: {
-        problem: "Blood donation drives and recipient needs are often disconnected — no central system to match donors to urgent requests quickly.",
-        solution: "Built a platform with real-time donor matching, automated notifications, and a streamlined registration flow to make emergency blood requests faster to fulfill.",
+        problem: "Small businesses in India run on paper registers and disconnected apps — no unified billing, inventory, bookings, or compliance-ready invoicing.",
+        solution: "Built the full stack myself — billing, bookings, inventory and staff management — with an AI layer that automates the busywork instead of just digitizing it.",
         keyFeatures: [
-          "Real-time donor-recipient matching",
-          "Automated notifications for urgent requests",
-          "Streamlined donor registration process"
+          "AI invoice generator with GST support",
+          "AI assistant that answers business questions, fills forms, and automates routine tasks",
+          "Booking, inventory, customer and staff management",
+          "QR menu ordering and an analytics dashboard",
+          "Razorpay payments with Hindi and English support"
         ],
-        achievement: "Final year project — healthcare logistics and empathy-driven design."
+        achievement: "Self-built practice project — designed and developed end-to-end."
       },
-      technologies: ["Web Development", "Database Management", "UX Design"],
+      technologies: ["Laravel", "React", "MySQL", "Tailwind CSS", "Razorpay", "LLM APIs"],
       liveUrl: "",
       githubUrl: "",
-      linkedinUrl: "https://lnkd.in/p/eszPKFkP",
-      image: "",
-      tag: "HEALTHTECH"
+      linkedinUrl: "https://lnkd.in/p/eMwQsadG",
+      images: [
+        "assets/images/ctrlbiz/dashboard.jpg",
+        "assets/images/ctrlbiz/onboarding.jpg",
+        "assets/images/ctrlbiz/login.jpg",
+        "assets/images/ctrlbiz/invoice.jpg",
+        "assets/images/ctrlbiz/catelouge.jpg",
+        "assets/images/ctrlbiz/staff.jpg"
+      ],
+      tag: "PERSONAL PROJECT"
     }
   ],
 
   otherProjects: [
     {
+      title: "BloodConnect",
+      description: "A web platform bridging the gap between blood donors and recipients, with real-time matching and automated notifications to help address critical blood shortages. Final year project.",
+      technologies: ["Web Development", "Database Management", "UX Design"],
+      liveUrl: "",
+      linkedinUrl: "https://lnkd.in/p/eszPKFkP",
+      images: ["assets/images/blood-connect/dashboard.jpg"]
+    },
+    {
       title: "Cyber Inceptor",
       description: "AI hand-tracking game suite — a gesture-controlled shooting game built in the browser using computer vision and HTML5 Canvas with low-latency interaction.",
       technologies: ["Computer Vision", "HTML5 Canvas", "JavaScript"],
-      liveUrl: "https://cyber-inceptor.netlify.app/"
+      liveUrl: "https://cyber-inceptor.netlify.app/",
+      playable: true
     },
     {
       title: "Paper Pilots",
       description: "A browser-based game built and shipped end-to-end, live and playable.",
       technologies: ["JavaScript", "HTML5 Canvas"],
-      liveUrl: "https://paper-pilots.netlify.app/"
+      liveUrl: "https://paper-pilots.netlify.app/",
+      playable: true
     },
     {
       title: "Friday",

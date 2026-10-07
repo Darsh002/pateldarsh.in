@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll("section[id]");
 
   // Sticky Header Scroll State
-  window.addEventListener("scroll", () => {
+  function updateScrollState() {
     if (window.scrollY > 50) {
       header?.classList.add("scrolled");
     } else {
@@ -51,7 +51,10 @@ document.addEventListener("DOMContentLoaded", () => {
         link.classList.add("active");
       }
     });
-  });
+  }
+
+  window.addEventListener("scroll", updateScrollState);
+  updateScrollState();
 
   // Mobile Menu Toggle Functions
   function openMobileMenu() {

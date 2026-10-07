@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("modal-title").textContent = proj.title;
     document.getElementById("modal-subtitle").textContent = proj.subtitle;
     document.getElementById("modal-description").textContent = proj.description;
+
     document.getElementById("modal-problem").textContent = proj.fullDetails.problem || "N/A";
     document.getElementById("modal-solution").textContent = proj.fullDetails.solution || "N/A";
 
@@ -65,8 +66,36 @@ document.addEventListener("DOMContentLoaded", () => {
   modalCloseBtn?.addEventListener("click", closeProjectModal);
   modalBackdrop?.addEventListener("click", closeProjectModal);
 
+  // 1b. Screenshot Lightbox
+  const lightbox = document.getElementById("image-lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const lightboxClose = document.getElementById("lightbox-close");
+
+  function closeLightbox() {
+    lightbox?.classList.remove("open");
+    if (lightboxImg) lightboxImg.src = "";
+    if (!modal?.classList.contains("open")) document.body.style.overflow = "";
+  }
+
+  document.addEventListener("click", (e) => {
+    const shot = e.target.closest(".project-carousel-img, .other-project-thumb");
+    if (shot && lightbox && lightboxImg) {
+      lightboxImg.src = shot.src;
+      lightboxImg.alt = shot.alt || "";
+      lightbox.classList.add("open");
+      document.body.style.overflow = "hidden";
+      return;
+    }
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  lightboxClose?.addEventListener("click", closeLightbox);
+
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && modal?.classList.contains("open")) {
+    if (e.key !== "Escape") return;
+    if (lightbox?.classList.contains("open")) {
+      closeLightbox();
+    } else if (modal?.classList.contains("open")) {
       closeProjectModal();
     }
   });
@@ -180,7 +209,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255, 76, 36, ${p.alpha})`;
+        ctx.fillStyle = `rgba(74, 58, 140, ${p.alpha})`;
         ctx.fill();
 
         for (let j = idx + 1; j < particles.length; j++) {
@@ -193,7 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p2.x, p2.y);
-            ctx.strokeStyle = `rgba(255, 76, 36, ${0.12 * (1 - dist / LINK_DISTANCE)})`;
+            ctx.strokeStyle = `rgba(74, 58, 140, ${0.12 * (1 - dist / LINK_DISTANCE)})`;
             ctx.lineWidth = 0.6;
             ctx.stroke();
           }

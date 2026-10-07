@@ -83,6 +83,19 @@
     grid-column: 2 / -1;
     margin-top: 0.5rem;
   }
+
+  .project-case-card {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card-media {
+    border-right: none;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .other-projects-list {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Mobile Screens (max-width: 768px) */
@@ -145,7 +158,21 @@
   }
 
   .project-case-card {
-    padding: 1.5rem;
+    grid-template-columns: 1fr;
+  }
+
+  .project-card-media {
+    padding: 1rem;
+  }
+
+  .carousel-arrow {
+    opacity: 1;
+    width: 28px;
+    height: 28px;
+  }
+
+  .project-card-body {
+    padding: 1.25rem;
   }
 
   .project-title {
